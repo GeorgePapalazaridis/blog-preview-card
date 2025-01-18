@@ -1,18 +1,31 @@
 :root {
-  --background-card-color: hsl(0, 0%, 100%);
-  --background-color: hsl(47, 88%, 63%);
-  --border-color: hsl(0, 0%, 7%);
-  --paragraph-color: hsl(0, 0%, 42%);
-  --title-color: hsl(0, 0%, 7%);
+  /* Colors */
+  --color-background-card: hsl(0, 0%, 100%);
+  --color-background-accent: hsl(47, 88%, 63%);
+  --color-border: hsl(0, 0%, 7%);
+  --color-paragraph: hsl(0, 0%, 42%);
+  --color-title: hsl(0, 0%, 7%);
 
+  /* Typography */
   --font-family: "Figtree", sans-serif;
-
   --font-size-main: 1rem;
   --font-size-small: 0.875rem;
   --font-size-big: 1.5rem;
-
-  --font-weight: 500;
+  --font-weight-regular: 500;
   --font-weight-bold: 800;
-
   --line-height: 1.5;
+
+  /* Spacing (optional for padding/margin) */
+  --spacing-extra-small: 4px;
+  --spacing-small: 12px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+
+  --gap-small: 12px;
+  --gap-medium: 16px;
+  --gap-large: 24px;
+
+  /* Shadows */
+  --shadow-card: 8px 8px 0 0 rgba(0, 0, 0, 1);
+  --shadow-image: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
