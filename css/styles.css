@@ -14,7 +14,26 @@
     box-sizing: border-box;
 }
 
-.blog-container {
+body {
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 800;
+    color: var(--title-color);
+    line-height: 1.5;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--paragraph-color);
+}
+
+.container {
     background-color: var(--background-color);
     display: flex;
     justify-content: center;
@@ -26,34 +45,44 @@
 .blog-wrapper {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: flex-start;
     padding: 24px;
     border: 1px var(--border-color) solid;
     border-radius: 20px;
     width: 384px;
-    height: 522px;
+    height: auto;
     background-color: var(--background-card-color);
     box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 1);
+    gap: 24px;
 }
 
 .image-wrapper {
     width: 100%;
-    height: 200px;
-    margin: 0 auto 24px auto;
-    
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    height: auto;
+    margin: 0 auto 0 auto;
 }
 
 .image-wrapper  > .image {
+    width: 100%;
+    height: auto;
     border: 1px var(--border-color) solid;
     border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+   
 }
 
-.tag {
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 800;
+    font-size: 14px;
     width: 82px;
     height: 29px;
     background-color: var(--background-color);
@@ -61,4 +90,27 @@
     border-radius: 4px;
     color: var(--title-color);
     text-align: center;
+}
+
+.date {
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer > .author {
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 800;
 }

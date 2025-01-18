@@ -6,28 +6,40 @@
     <title>Blog Preview Card</title>
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <main class="blog-container">
+    <main class="container">
       <article class="blog-wrapper">
         <header>
-          <div class="image-wrapper">
+          <picture class="image-wrapper">
             <img class="image" src="images/illustration-article.svg" alt="" />
-          </div>
-
-          <p class="tag">Learning</p>
-          <p><time datetime="YYYY-MM-DD">12/22/25</time></p>
+          </picture>
         </header>
 
-        <h1>The title goes here</h1>
+        <section class="article">
+          <p class="category">Learning</p>
+          <p class="date">
+            Published <time datetime="YYYY-MM-DD">21 Dec 2023</time>
+          </p>
 
-        <section>
-          <p>the text goes here</p>
+          <h1 class="title">HTML & CSS foundations</h1>
+
+          <p class="main-text">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
         </section>
 
         <footer>
-          <p>the author goes here</p>
+          <section class="footer">
+            <img src="images/image-avatar.webp" width="32" height="32" />
+            <p class="author">Greg Hooper</p>
+          </section>
         </footer>
       </article>
     </main>
