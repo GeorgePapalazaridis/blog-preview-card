@@ -1,0 +1,18 @@
+:root {
+  --background-card-color: hsl(0, 0%, 100%);
+  --background-color: hsl(47, 88%, 63%);
+  --border-color: hsl(0, 0%, 7%);
+  --paragraph-color: hsl(0, 0%, 42%);
+  --title-color: hsl(0, 0%, 7%);
+
+  --font-family: "Figtree", sans-serif;
+
+  --font-size-main: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-big: 1.5rem;
+
+  --font-weight: 500;
+  --font-weight-bold: 800;
+
+  --line-height: 1.5;
+}
