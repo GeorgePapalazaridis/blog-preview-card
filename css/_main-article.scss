@@ -1,7 +1,7 @@
 .blog-wrapper {
   padding: clamp(var(--spacing-small), 5%, var(--spacing-large));
   border: 1px var(--color-border) solid;
-  border-radius: 20px;
+  border-radius: var(--border-radius-big);
   width: clamp(320px, 90%, 384px);
   height: auto;
   background-color: var(--color-background-card);
@@ -18,7 +18,7 @@
   width: 100%;
   height: auto;
   border: 1px var(--color-border) solid;
-  border-radius: 10px;
+  border-radius: var(--border-radius-medium);
   box-shadow: var(--shadow-image);
 }
 
@@ -33,7 +33,7 @@
   height: 29px;
   background-color: var(--color-background-accent);
   padding: var(--spacing-small) var(--spacing-extra-small);
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   color: var(--color-title);
   text-align: center;
 }

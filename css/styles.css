@@ -1,9 +1,274 @@
-@import "normalize.css";
-@import "_variables.css";
-@import "_main-article.css";
-@import "_footer.css";
-@import "_responsiveness.css";
+/* normalize.css | MIT License | github.com/necolas/normalize.css */
+/* Document-wide styles */
+html {
+  line-height: 1.15; /* Adjust line height for better readability */
+  -webkit-text-size-adjust: 100%; /* Prevent font resizing in landscape */
+  font-size: 16px;
+}
 
+body {
+  margin: 0; /* Remove default margin */
+}
+
+/* HTML5 display definitions */
+main {
+  display: block; /* Allow main to behave as a block element */
+}
+
+hr {
+  box-sizing: content-box; /* Match box model */
+  height: 0; /* Remove height */
+  overflow: visible; /* Ensure overflow behavior */
+}
+
+/* Typography */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* Fix font inheritance */
+  font-size: 1em; /* Ensure consistent size */
+}
+
+/* Embedded content */
+img {
+  border-style: none; /* Remove border from images */
+}
+
+svg {
+  fill: currentColor; /* Use current text color for SVGs */
+}
+
+/* Form elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* Ensure font matches */
+  font-size: 100%; /* Ensure consistent size */
+  line-height: 1.15; /* Maintain readability */
+  margin: 0; /* Remove default margin */
+}
+
+button,
+input {
+  overflow: visible; /* Ensure default overflow */
+}
+
+button {
+  text-transform: none; /* Prevent auto-capitalization */
+}
+
+select {
+  text-transform: none; /* Prevent auto-capitalization */
+}
+
+textarea {
+  overflow: auto; /* Allow scrolling for long text */
+}
+
+fieldset {
+  margin: 0; /* Remove margin */
+  padding: 0.35em 0.75em 0.625em; /* Default padding */
+}
+
+legend {
+  box-sizing: border-box; /* Match box model */
+  color: inherit; /* Inherit color */
+  display: table; /* Table layout for centering */
+  max-width: 100%; /* Prevent overflow */
+  white-space: normal; /* Enable wrapping */
+}
+
+progress {
+  vertical-align: baseline; /* Align progress bar */
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto; /* Consistent size for spinner buttons */
+}
+
+[type=search] {
+  appearance: textfield; /* Standard property for compatibility */
+  -webkit-appearance: textfield; /* Prevent special search input styling */
+  outline-offset: -2px; /* Adjust outline */
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none; /* Remove decoration */
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* Button-like appearance */
+  font: inherit; /* Inherit font styles */
+}
+
+details {
+  display: block; /* Enable block display */
+}
+
+summary {
+  display: list-item; /* Display as list item */
+}
+
+template {
+  display: none; /* Hide by default */
+}
+
+/* Hidden elements */
+[hidden] {
+  display: none; /* Ensure hidden elements are not displayed */
+}
+
+:root {
+  /* Colors */
+  --color-background-card: hsl(0, 0%, 100%);
+  --color-background-accent: hsl(47, 88%, 63%);
+  --color-border: hsl(0, 0%, 7%);
+  --color-paragraph: hsl(0, 0%, 42%);
+  --color-title: hsl(0, 0%, 7%);
+  /* Typography */
+  --font-family: "Figtree", sans-serif;
+  --font-size-main: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-big: 1.5rem;
+  --font-weight-regular: 500;
+  --font-weight-bold: 800;
+  --line-height: 1.5;
+  /* Spacing (optional for padding/margin) */
+  --spacing-extra-small: 4px;
+  --spacing-small: 12px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --gap-small: 12px;
+  --gap-medium: 16px;
+  --gap-large: 24px;
+  /* Shadows */
+  --shadow-card: 8px 8px 0 0 rgba(0, 0, 0, 1);
+  --shadow-image: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.blog-wrapper {
+  padding: clamp(var(--spacing-small), 5%, var(--spacing-large));
+  border: 1px var(--color-border) solid;
+  border-radius: 20px;
+  width: clamp(320px, 90%, 384px);
+  height: auto;
+  background-color: var(--color-background-card);
+  box-shadow: var(--shadow-card);
+  gap: var(--gap-large);
+}
+
+.image-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.image-wrapper > .image {
+  width: 100%;
+  height: auto;
+  border: 1px var(--color-border) solid;
+  border-radius: 10px;
+  box-shadow: var(--shadow-image);
+}
+
+.article {
+  gap: var(--gap-small);
+}
+
+.category {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-small);
+  width: 82px;
+  height: 29px;
+  background-color: var(--color-background-accent);
+  padding: var(--spacing-small) var(--spacing-extra-small);
+  border-radius: 4px;
+  color: var(--color-title);
+  text-align: center;
+}
+
+.date {
+  color: var(--color-title);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-regular);
+}
+
+.title {
+  font-size: var(--font-size-big);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-small);
+}
+
+.footer > .author {
+  color: var(--color-title);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.flex-gap-small {
+  gap: var(--gap-small);
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-around {
+  justify-content: space-around;
+}
+
+.flex-align-end {
+  align-items: flex-end;
+}
+
+/* Tablet Screens (768px - 1024px) */
+/* Mobile Screens (375px - 768px) */
+@media (max-width: 768px) {
+  :root {
+    --font-size-main: 0.875rem; /* 14px if 1rem = 16px */
+    --font-size-small: 0.75rem; /* 12px */
+    --font-size-big: 1.25rem; /* 20px */
+  }
+}
+/* Small Mobile Screens (up to 480px) */
+@media (max-width: 480px) {
+  :root {
+    --font-size-main: 0.8125rem; /* 13px */
+    --font-size-small: 0.6875rem; /* 11px */
+    --font-size-big: 1.125rem; /* 18px */
+  }
+}
+/* Small Mobile Screens (up to 480px) */
+@media (max-width: 300px) {
+  .blog-wrapper {
+    width: 85%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -42,3 +307,5 @@ p {
   width: 100vw;
   height: 100vh;
 }
+
+/*# sourceMappingURL=styles.css.map */

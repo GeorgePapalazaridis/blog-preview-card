@@ -3,28 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Preview Card</title>
+
+    <title>HTML & CSS Foundations - Blog Preview Card</title>
 
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap"
       rel="stylesheet"
+      as="style"
     />
   </head>
 
   <body>
     <main class="container">
-      <article class="blog-wrapper flex flex-column">
+      <article
+        class="blog-wrapper flex flex-column"
+        aria-label="Blog preview about HTML & CSS Foundations"
+      >
         <header>
-          <picture class="image-wrapper">
-            <img class="image" src="images/illustration-article.svg" alt="" />
-          </picture>
+          <div class="image-wrapper">
+            <img
+              class="image"
+              src="images/illustration-article.svg"
+              alt="Illustration for HTML and CSS article"
+            />
+          </div>
         </header>
 
         <section class="article flex flex-column">
           <p class="category flex flex-center">Learning</p>
           <p class="date">
-            Published <time datetime="YYYY-MM-DD">21 Dec 2023</time>
+            Published <time datetime="2023-12-21" lang="en">21 Dec 2023</time>
           </p>
 
           <h1 class="title">HTML & CSS foundations</h1>
@@ -37,7 +46,12 @@
 
         <footer>
           <section class="footer">
-            <img src="images/image-avatar.webp" width="32" height="32" />
+            <img
+              src="images/image-avatar.webp"
+              alt="Author Greg Hooper"
+              width="32"
+              height="32"
+            />
             <p class="author">Greg Hooper</p>
           </section>
         </footer>

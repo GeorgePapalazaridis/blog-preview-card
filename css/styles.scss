@@ -1,0 +1,44 @@
+@use "normalize";
+@use "_variables";
+@use "_main-article";
+@use "_footer";
+@use "_responsiveness";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-main);
+  line-height: var(--line0height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-title);
+  line-height: var(--line-height);
+}
+
+p {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-main);
+  line-height: var(--line-height);
+  color: var(--color-paragraph);
+}
+
+.container {
+  background-color: var(--color-background-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
