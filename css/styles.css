@@ -129,6 +129,7 @@ template {
   --color-border: hsl(0, 0%, 7%);
   --color-paragraph: hsl(0, 0%, 42%);
   --color-title: hsl(0, 0%, 7%);
+  --color-hover-onclick: hsl(47, 88%, 63%);
   /* Typography */
   --font-family: "Figtree", sans-serif;
   --font-size-main: 1rem;
@@ -182,7 +183,7 @@ template {
   gap: var(--gap-small);
 }
 
-.category {
+.blog-category {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-small);
   width: 82px;
@@ -194,7 +195,7 @@ template {
   text-align: center;
 }
 
-.date {
+.blog-date {
   color: var(--color-title);
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-regular);
@@ -202,6 +203,8 @@ template {
 
 .title {
   font-size: var(--font-size-big);
+  margin: 0;
+  outline: none;
 }
 
 .footer {
@@ -211,10 +214,34 @@ template {
   gap: var(--gap-small);
 }
 
-.footer > .author {
+.footer > .blog-author {
   color: var(--color-title);
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-bold);
+}
+
+.blog-click {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease, transform 0.3s ease;
+  outline: none;
+}
+
+.blog-click:hover,
+.blog-click:hover .title {
+  color: var(--color-hover-onclick);
+  transform: scale(0.98);
+}
+
+.blog-click:active,
+.blog-click:active .title {
+  transform: scale(0.95);
+}
+
+.blog-click:focus,
+.blog-click:focus .title {
+  outline: none;
+  text-decoration: underline;
 }
 
 .flex {

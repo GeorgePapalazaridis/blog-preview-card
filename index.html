@@ -3,9 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="George Papalazaridis" />
+    <meta
+      name="description"
+      content="A responsive blog preview card showcasing HTML and CSS concepts, built as part of a Frontend Mentor challenge."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Blog Card, Responsive Design, Frontend Mentor"
+    />
+
+    <!-- Open Graph Metadata -->
+    <meta
+      property="og:title"
+      content="HTML & CSS Foundations - Blog Preview Card"
+    />
+    <meta
+      property="og:description"
+      content="A responsive blog preview card showcasing HTML and CSS concepts."
+    />
+    <meta property="og:image" content="images/desktop-preview.jpg" />
+    <meta
+      property="og:image:alt"
+      content="Preview of the blog card design for the HTML and CSS Foundations article."
+    />
+    <meta property="og:url" content="https://your-site-url.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Blog Preview Card" />
+    <meta property="og:locale" content="gr_GR" />
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="HTML & CSS Foundations - Blog Preview Card"
+    />
+    <meta
+      name="twitter:description"
+      content="A responsive blog preview card showcasing HTML and CSS concepts, built as part of a Frontend Mentor challenge."
+    />
+    <meta name="twitter:image" content="images/preview-image.png" />
+    <meta
+      name="twitter:image:alt"
+      content="Preview of the blog card design for the HTML and CSS Foundations article."
+    />
+    <meta name="twitter:creator" content="@your_twitter_handle" />
+
+    <!-- Favicon and Theme Color -->
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f4d04e" />
 
     <title>HTML & CSS Foundations - Blog Preview Card</title>
-
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap"
@@ -19,24 +69,28 @@
       <article
         class="blog-wrapper flex flex-column"
         aria-label="Blog preview about HTML & CSS Foundations"
+        role="article"
       >
         <header>
-          <div class="image-wrapper">
+          <figure class="image-wrapper">
             <img
               class="image"
               src="images/illustration-article.svg"
               alt="Illustration for HTML and CSS article"
             />
-          </div>
+          </figure>
         </header>
 
         <section class="article flex flex-column">
-          <p class="category flex flex-center">Learning</p>
-          <p class="date">
-            Published <time datetime="2023-12-21" lang="en">21 Dec 2023</time>
+          <p class="blog-category flex flex-center">Learning</p>
+          <p class="blog-date">
+            <span>Published on </span>
+            <time datetime="2023-12-21" lang="en">21 Dec 2023</time>
           </p>
 
-          <h1 class="title">HTML & CSS foundations</h1>
+          <a href="#" class="blog-click">
+            <h1 class="title">HTML & CSS foundations</h1>
+          </a>
 
           <p class="main-text">
             These languages are the backbone of every website, defining
@@ -52,7 +106,7 @@
               width="32"
               height="32"
             />
-            <p class="author">Greg Hooper</p>
+            <p class="blog-author">Greg Hooper</p>
           </section>
         </footer>
       </article>

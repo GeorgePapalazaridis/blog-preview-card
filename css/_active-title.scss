@@ -1,0 +1,23 @@
+.blog-click {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease, transform 0.3s ease;
+  outline: none;
+}
+
+.blog-click:hover,
+.blog-click:hover .title {
+  color: var(--color-hover-onclick);
+  transform: scale(0.98);
+}
+
+.blog-click:active,
+.blog-click:active .title {
+  transform: scale(0.95);
+}
+
+.blog-click:focus,
+.blog-click:focus .title {
+  outline: none;
+  text-decoration: underline;
+}

@@ -27,7 +27,7 @@
   gap: var(--gap-small);
 }
 
-.category {
+.blog-category {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-small);
   width: 82px;
@@ -39,7 +39,7 @@
   text-align: center;
 }
 
-.date {
+.blog-date {
   color: var(--color-title);
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-regular);
@@ -47,4 +47,6 @@
 
 .title {
   font-size: var(--font-size-big);
+  margin: 0;
+  outline: none;
 }

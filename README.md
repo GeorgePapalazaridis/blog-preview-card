@@ -20,7 +20,7 @@ A **solution** for the [Frontend Mentor Blog Preview Card Component Challenge](h
 
 ## **Overview**
 
-This project is a **responsive blog preview card** designed to showcase essential web development concepts. It features a clean, visually appealing layout that adjusts seamlessly across mobile, tablet, and desktop devices. The styles are built with **Sass** for modular, reusable, and maintainable CSS.
+This project is a **responsive blog preview card** designed to showcase essential web development concepts. It features a clean, visually appealing layout that adjusts seamlessly across mobile, tablet, and desktop devices. The styles are built with **Sass** for modular, reusable, and maintainable CSS, following best practices for performance, responsiveness, and accessibility.
 
 ---
 
@@ -30,6 +30,8 @@ This project is a **responsive blog preview card** designed to showcase essentia
 - **Sass** for organized and modular styling with variables, mixins, and nesting.
 - **Mobile-first workflow** ensuring optimal design for smaller screens.
 - Fully responsive layout for devices ranging from 320px to 1440px.
+- Smooth hover and active state transitions for interactive elements.
+- Focus styles for enhanced accessibility during keyboard navigation.
 - Google Fonts integration for custom typography.
 - Accessible features such as descriptive `alt` attributes, `time` elements, and ARIA labels.
 
@@ -50,9 +52,9 @@ This project is a **responsive blog preview card** designed to showcase essentia
 
 The layout adjusts dynamically to different screen sizes:
 
-- **Mobile (375px - 768px)**: Compact and optimized view with larger font sizes.
-- **Tablet (768px - 1024px)**: Balanced layout with optimized spacing.
-- **Desktop (1024px - 1440px)**: Centered and proportionate design.
+- **Mobile (375px - 768px)**: Optimized for smaller screens with compact card dimensions, adjusted font sizes, and padding for better readability.
+- **Tablet (768px - 1024px)**: Balanced layout with proportionate spacing and alignment.
+- **Desktop (1024px - 1440px)**: Fully centered design with optimal spacing and proportions for a larger viewing area.
 
 ---
 
@@ -74,7 +76,10 @@ The layout adjusts dynamically to different screen sizes:
    ```bash
    sass css/styles.scss css/styles.css
    ```
-5. Open the `index.html` file in your browser or deploy it to a live server.
+5. Open the `index.html` file in your browser or use a live server to view it locally:
+   ```bash
+   npx live-server
+   ```
 
 ---
 
@@ -90,15 +95,11 @@ The layout adjusts dynamically to different screen sizes:
 
 ### Mobile View
 
-![Mobile View](path-to-mobile-screenshot.png)
-
-### Tablet View
-
-![Tablet View](path-to-tablet-screenshot.png)
+![Mobile View](images/mobile-preview.jpg)
 
 ### Desktop View
 
-![Desktop View](path-to-desktop-screenshot.png)
+![Desktop View](images/mobile-preview.jpg)
 
 ---
 
@@ -106,8 +107,10 @@ The layout adjusts dynamically to different screen sizes:
 
 During this project, I:
 
-- Practiced implementing responsive layouts with `clamp()` for dynamic scaling.
+- Practiced implementing responsive layouts with `clamp()` for dynamic scaling and proportions.
+
 - Learned how to use **Sass** for modular and maintainable styling.
+- Improved hover, focus, and active state transitions for interactive elements.
 - Enhanced my understanding of semantic HTML and its role in accessibility.
 - Refined my skills in creating responsive designs using a **mobile-first approach**.
 
