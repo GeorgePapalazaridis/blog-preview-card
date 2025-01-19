@@ -2,7 +2,8 @@
   padding: clamp(var(--spacing-small), 5%, var(--spacing-large));
   border: 1px var(--color-border) solid;
   border-radius: var(--border-radius-big);
-  width: clamp(320px, 90%, 384px);
+  width: clamp(301px, 90%, 384px);
+  max-width: 384px;
   height: auto;
   background-color: var(--color-background-card);
   box-shadow: var(--shadow-card);

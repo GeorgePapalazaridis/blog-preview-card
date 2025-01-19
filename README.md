@@ -1,6 +1,6 @@
 # **Blog Preview Card**
 
-A **solution** for the [Frontend Mentor Blog Preview Card Component Challenge](https://www.frontendmentor.io). This project demonstrates a **responsive and accessible design** using semantic **HTML5**, **CSS custom properties**, and a **mobile-first workflow**.
+A **solution** for the [Frontend Mentor Blog Preview Card Component Challenge](https://www.frontendmentor.io). This project demonstrates a **responsive and accessible design** using **semantic HTML5**, **Sass for CSS preprocessing**, and a **mobile-first workflow**.
 
 ---
 
@@ -20,14 +20,14 @@ A **solution** for the [Frontend Mentor Blog Preview Card Component Challenge](h
 
 ## **Overview**
 
-This project is a **responsive blog preview card** designed to showcase essential web development concepts. It features a clean, visually appealing layout that adjusts seamlessly across mobile, tablet, and desktop devices.
+This project is a **responsive blog preview card** designed to showcase essential web development concepts. It features a clean, visually appealing layout that adjusts seamlessly across mobile, tablet, and desktop devices. The styles are built with **Sass** for modular, reusable, and maintainable CSS.
 
 ---
 
 ## **Features**
 
 - **Semantic HTML5** for better accessibility and SEO.
-- **CSS custom properties** for easy theming and reusability.
+- **Sass** for organized and modular styling with variables, mixins, and nesting.
 - **Mobile-first workflow** ensuring optimal design for smaller screens.
 - Fully responsive layout for devices ranging from 320px to 1440px.
 - Google Fonts integration for custom typography.
@@ -38,10 +38,10 @@ This project is a **responsive blog preview card** designed to showcase essentia
 ## **Technologies Used**
 
 - **HTML5**: Semantic markup for a well-structured and accessible layout.
-- **CSS3**:
+- **Sass (SCSS)**:
   - Custom properties (`--variables`) for maintainable styling.
-  - Flexbox for layout alignment.
-  - `clamp()` for responsive typography and widths.
+  - `@use` for modular imports and reusable styles.
+  - Nesting and mixins for organized and efficient CSS.
 - **Google Fonts**: [Figtree](https://fonts.google.com/specimen/Figtree) for modern typography.
 
 ---
@@ -66,7 +66,15 @@ The layout adjusts dynamically to different screen sizes:
    ```bash
    cd blog-preview-card
    ```
-3. Open the `index.html` file in your browser or deploy it to a live server.
+3. Install the Sass compiler if not already installed:
+   ```bash
+   npm install -g sass
+   ```
+4. Compile the Sass files into CSS:
+   ```bash
+   sass css/styles.scss css/styles.css
+   ```
+5. Open the `index.html` file in your browser or deploy it to a live server.
 
 ---
 
@@ -74,7 +82,7 @@ The layout adjusts dynamically to different screen sizes:
 
 1. Open the `index.html` file in any modern browser.
 2. Resize the browser window or test on different devices to see the responsive design in action.
-3. Inspect the HTML and CSS code to learn about the implementation.
+3. Inspect the HTML and Sass code to learn about the implementation.
 
 ---
 
@@ -99,13 +107,12 @@ The layout adjusts dynamically to different screen sizes:
 During this project, I:
 
 - Practiced implementing responsive layouts with `clamp()` for dynamic scaling.
+- Learned how to use **Sass** for modular and maintainable styling.
 - Enhanced my understanding of semantic HTML and its role in accessibility.
-- Refined my skills in using CSS custom properties for reusable and maintainable styles.
+- Refined my skills in creating responsive designs using a **mobile-first approach**.
 
 ---
 
 ## **Acknowledgements**
 
 This project is part of the [Frontend Mentor Challenge](https://www.frontendmentor.io). Special thanks to the Frontend Mentor community for providing guidance and inspiration.
-
----
