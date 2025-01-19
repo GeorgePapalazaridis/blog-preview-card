@@ -18,3 +18,44 @@
 .flex-gap-small {
   gap: var(--gap-small);
 }
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-around {
+  justify-content: space-around;
+}
+
+.flex-align-end {
+  align-items: flex-end;
+}
+
+/* Tablet Screens (768px - 1024px) */
+@media (max-width: 1024px) {
+}
+
+/* Mobile Screens (375px - 768px) */
+@media (max-width: 768px) {
+  :root {
+    --font-size-main: 0.875rem; /* 14px if 1rem = 16px */
+    --font-size-small: 0.75rem; /* 12px */
+    --font-size-big: 1.25rem; /* 20px */
+  }
+}
+
+/* Small Mobile Screens (up to 480px) */
+@media (max-width: 480px) {
+  :root {
+    --font-size-main: 0.8125rem; /* 13px */
+    --font-size-small: 0.6875rem; /* 11px */
+    --font-size-big: 1.125rem; /* 18px */
+  }
+}
+
+/* Small Mobile Screens (up to 480px) */
+@media (max-width: 300px) {
+  .blog-wrapper {
+    width: 85%;
+  }
+}

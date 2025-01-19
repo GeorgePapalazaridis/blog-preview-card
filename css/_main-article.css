@@ -1,8 +1,8 @@
 .blog-wrapper {
-  padding: var(--spacing-large);
+  padding: clamp(var(--spacing-small), 5%, var(--spacing-large));
   border: 1px var(--color-border) solid;
   border-radius: 20px;
-  width: 384px;
+  width: clamp(320px, 90%, 384px);
   height: auto;
   background-color: var(--color-background-card);
   box-shadow: var(--shadow-card);
@@ -10,7 +10,7 @@
 }
 
 .image-wrapper {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
